@@ -60,9 +60,9 @@ There is a little stunning surprise on its right hand side.
 <iframe src="patient-flows/movingbubble.html" width="80%" height="600px" frameborder="0" scrolling="no" style="overflow: hidden;"></iframe>
 
 
-## Patient Visit Flow
+### Patient Visit Flow
 
-```{screen, out-width="100%"}
+```{r, out-width="100%", engine="screen"}
 <iframe src="patient-flows/movingbubble.html" 
         width="100%" 
         height="100vh" 
@@ -74,6 +74,9 @@ There is a little stunning surprise on its right hand side.
 
 
 
+          
+          
+          
 ## Main Features
 
 ### Typography
@@ -89,9 +92,12 @@ The header is fully customized, complete with a fun GitHub corner linking to the
 For a complete list of features, [visit the documentation](https://www.productive-r-workflow.com/r/bonus/lumo-quarto-template)!
 
 Oh and since we're here, did you know you can easily include a full width interactive map with `leaflet` in a quarto doc? 😍
+
 ```{r}
 #| column: screen
 #| out-width: 100%
+
+knitr::include_html("patient-flows/movingbubble.html")
 
 ```
 
