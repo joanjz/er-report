@@ -57,10 +57,18 @@ There is a little stunning surprise on its right hand side.
 
 
 ## Patient Visit Flow
-<iframe src="patient-flows/movingbubble.html" width="80%" height="600px" frameborder="0" scrolling="no" style="overflow: hidden;"></iframe>
 
 
-          
+```{html}
+<iframe src="patient-flows/movingbubble.html" 
+        width="100%" 
+        height="100vh" 
+        frameborder="0" 
+        scrolling="no" 
+        style="border: none;">
+    Your browser does not support iframes.
+</iframe>
+```
           
 ## Main Features
 
@@ -81,8 +89,6 @@ Oh and since we're here, did you know you can easily include a full width intera
 ```{r}
 #| column: screen
 #| out-width: 100%
-
-knitr::include_html("patient-flows/movingbubble.html")
 
 ```
 
