@@ -1,6 +1,6 @@
 ---
-title: "A report for the Maryland Department of transportation"
-subtitle: "This document is a starter report that fits the branding of the <a href='https://joanjz.github.io/'>Maryland Department of Transportation</a>"
+title: "A Comprehensive Report on Emergency Department(ER) Operations"
+subtitle: "This comprehensive report examines emergency department (ER) operations, focusing on critical key performance indicators (KPIs) that reflect the efficiency and effectiveness of patient care from triage to treatment.It analyzes patient visit metrics to measure overall demand and examines the time from door to doctor, providing insights into initial response times. The report also looks into the duration from doctor to decision, highlighting the speed at which healthcare providers can evaluate and decide on necessary interventions. For more information visit<a href='https://joanjz.github.io/'>ER Deparment</a>"
 format:
   lumo-html: 
     logo: "logo.png"                             # Optional. Path to a logo displayed above the title
@@ -36,7 +36,7 @@ Make sure to load **all your packages** at the start of your document for clarit
 Notice that the code chunks are folded by default. You can adjust this behavior with the `code-fold` option in the document's YAML header.
 
 
-```{r, warning=F, message=F}
+```{r, warning=F, message=F, echo=FALSE}
 library(tidyverse) 
 library(hrbrthemes) # <1>
 library(viridis) # <2>
@@ -72,6 +72,14 @@ Oh and since we're here, did you know you can easily include a full width intera
 ```{r}
 #| column: screen
 #| out-width: 100%
+
+# Load the library.
+library(leaflet)
+
+# Make a map
+leaflet() %>%
+  addTiles() %>% # Add default OpenStreetMap map tiles
+  addMarkers(lng = 174.768, lat = -36.852, popup = "The birthplace of R")
 
 ```
 
