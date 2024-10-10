@@ -1352,8 +1352,7 @@
         "R",
         "Rcpp",
         "methods",
-        "sp",
-        "terra"
+        "sp"
       ],
       "Hash": "0e2829df8cb74a98179c886b023ffea8"
     },
