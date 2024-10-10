@@ -73,13 +73,6 @@ Oh and since we're here, did you know you can easily include a full width intera
 #| column: screen
 #| out-width: 100%
 
-# Load the library.
-library(leaflet)
-
-# Make a map
-leaflet() %>%
-  addTiles() %>% # Add default OpenStreetMap map tiles
-  addMarkers(lng = 174.768, lat = -36.852, popup = "The birthplace of R")
 ```
 
 
